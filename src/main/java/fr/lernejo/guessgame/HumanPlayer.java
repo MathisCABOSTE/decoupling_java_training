@@ -16,8 +16,9 @@ public class HumanPlayer implements Player{
     }
     public long askNextGuess(){
         Scanner scanner = new Scanner(System.in);
-        var input = scanner.nextLine();
-        scanner.close();
-        return Integer.parseInt(input);
+        System.out.println("Combien ?!");
+        long input = scanner.nextLong();
+        scanner.nextLine();
+        return input;
     }
 }
